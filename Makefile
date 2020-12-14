@@ -2,6 +2,6 @@
 run:
 	${info RUNNING ${DAY}: ${QUESTION} -}
 	${info }
-	go build -o solver ./${DAY}/${QUESTION}
-	./solver ${DAY}/input.txt
+	go build -o solver ./src/${DAY}/${QUESTION}
+	./solver ./src/${DAY}/input.txt
 	rm solver
